@@ -32,7 +32,7 @@ jobs:
         run: go install github.com/pressly/goose/v3/cmd/goose@latest
 
       - name: 'Deploy database migration script'
-        run: ${PWD}/scripts/migrationup.sh
+        run: ${PWD}/scripts/migrateup.sh
 
       - name: 'Set up Cloud SDK'
         uses: 'google-github-actions/setup-gcloud@v3'
